@@ -1,7 +1,5 @@
 import random
-# import datetime
-from data_points import students
+from data_points import students, departments
 
-numbers = [random.randint(1,100) for _ in len(students)]
-
-print("The app works!")
+for i in range(len(students)):
+    print(f'{students[i]}: {random.choice(departments)}')
